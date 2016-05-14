@@ -18,14 +18,14 @@ gulp.task('serve', ['sass'], function(){
 
 
 gulp.task('sass', function(){
-	gulp.src('./scss/style.scss')
+	gulp.src('./scss/**.scss')
 	.pipe(sass().on('error', sass.logError))
 	.pipe(gulp.dest('./css/'))
 	.pipe(browserSync.stream());
 });
 
 gulp.task('sass-minify', function(){
-	gulp.src('./scss/style.scss')
+	gulp.src('./scss/**.scss')
 	.pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
 	.pipe(gulp.dest('./css/'));
 });
