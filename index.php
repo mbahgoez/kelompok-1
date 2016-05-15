@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>DASHBOARD</title>
 	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
@@ -152,21 +152,24 @@
 							<h3>DAFTAR SISWA</h3>
 							<hr>
 						</div>
-						<div class="list">
+						<div class="command">
 							<a href="" class="tambah">TAMBAH SISWA<i class="icon ion-plus-round"></i></a>
+						</div>
+						<div class="list">
+							
+							<div class="scrolling">
 							<table>
 								<thead>
 									<tr>
-										<td><i class="icon ion-pound"></i></td>
-										<td>NIS</td>
-										<td>Nama</td>
-										<td>ID Jurusan</td>
-										<td>Jenis Kelamin</td>
-										<td>Alamat</td>
-										<td colspan="2" align="center">Action</td>
+										<th><i class="icon ion-pound"></i></th>
+										<th>NIS</th>
+										<th>Nama</th>
+										<th>ID Jurusan</th>
+										<th>Jenis Kelamin</th>
+										<th>Alamat</th>
+										<th colspan="2" align="center">Action</th>
 									</tr>
 								</thead>
-								<div class="scrolling">
 								<tbody>
 									<tr>
 										<td>1</td>
@@ -424,8 +427,8 @@
 										</td>
 									</tr>
 								</tbody>
-								</div>
 							</table>
+							</div><!-- scrolling ->
 						</div><!-- list -->
 					</div><!-- card -->
 				</div><!-- list table -->
@@ -438,17 +441,21 @@
 							<h3>DAFTAR PENGAJAR</h3>
 							<hr>
 						</div>
-						<div class="list">
+						<div class="command">
+							
 							<a href="" class="tambah">TAMBAH PENGAJAR<i class="icon ion-plus-round"></i></a>
+						</div>
+						<div class="list">
+						<div class="scrolling">
 							<table>
 								<thead>
 									<tr>
-										<td><i class="icon ion-pound"></i></td>
-										<td>ID Guru</td>
-										<td>Nama Guru</td>
-										<td>Jenis Kelamin</td>
-										<td>Alamat</td>
-										<td colspan="2" align="center">Action</td>
+										<th><i class="icon ion-pound"></i></th>
+										<th>ID Guru</th>
+										<th>Nama Guru</th>
+										<th>Jenis Kelamin</th>
+										<th>Alamat</th>
+										<th colspan="2" align="center">Action</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -532,14 +539,152 @@
 											</a>
 										</td>
 									</tr>
+
+									<tr>
+										<td>4</td>
+										<td>P04</td>
+										<td>Astuti</td>
+										<td>Laki - Laki</td>
+										<td>Denpasar, ID</td>
+										<td>
+											<a href="" class="hapus">
+												HAPUS
+											<i class="icon ion-ios-trash-outline"></i>
+											</a>
+										</td>
+
+										<td>
+											<a href="" class="edit">
+												EDIT
+											<i class="icon ion-edit"></i>
+											</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>4</td>
+										<td>P04</td>
+										<td>Astuti</td>
+										<td>Laki - Laki</td>
+										<td>Denpasar, ID</td>
+										<td>
+											<a href="" class="hapus">
+												HAPUS
+											<i class="icon ion-ios-trash-outline"></i>
+											</a>
+										</td>
+
+										<td>
+											<a href="" class="edit">
+												EDIT
+											<i class="icon ion-edit"></i>
+											</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>4</td>
+										<td>P04</td>
+										<td>Astuti</td>
+										<td>Laki - Laki</td>
+										<td>Denpasar, ID</td>
+										<td>
+											<a href="" class="hapus">
+												HAPUS
+											<i class="icon ion-ios-trash-outline"></i>
+											</a>
+										</td>
+
+										<td>
+											<a href="" class="edit">
+												EDIT
+											<i class="icon ion-edit"></i>
+											</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>4</td>
+										<td>P04</td>
+										<td>Astuti</td>
+										<td>Laki - Laki</td>
+										<td>Denpasar, ID</td>
+										<td>
+											<a href="" class="hapus">
+												HAPUS
+											<i class="icon ion-ios-trash-outline"></i>
+											</a>
+										</td>
+
+										<td>
+											<a href="" class="edit">
+												EDIT
+											<i class="icon ion-edit"></i>
+											</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>4</td>
+										<td>P04</td>
+										<td>Astuti</td>
+										<td>Laki - Laki</td>
+										<td>Denpasar, ID</td>
+										<td>
+											<a href="" class="hapus">
+												HAPUS
+											<i class="icon ion-ios-trash-outline"></i>
+											</a>
+										</td>
+
+										<td>
+											<a href="" class="edit">
+												EDIT
+											<i class="icon ion-edit"></i>
+											</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>4</td>
+										<td>P04</td>
+										<td>Astuti</td>
+										<td>Laki - Laki</td>
+										<td>Denpasar, ID</td>
+										<td>
+											<a href="" class="hapus">
+												HAPUS
+											<i class="icon ion-ios-trash-outline"></i>
+											</a>
+										</td>
+
+										<td>
+											<a href="" class="edit">
+												EDIT
+											<i class="icon ion-edit"></i>
+											</a>
+										</td>
+									</tr>
 								</tbody>
 							</table>
+							</div>
 						</div><!-- list -->
 					</div><!-- card -->
 				</div><!-- list table -->
 			</div><!-- siswa -->
-
 		</div><!-- content -->
 	</section>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.floatThead.min.js"></script>
+	<script>
+		var $table = $(".list table");
+		$table.floatThead({
+			scrollContainer: function($table){
+				return $table.closest(".scrolling");
+			}
+		});
+	</script>
 </body>
 </html>
