@@ -11,8 +11,22 @@ body {
   font-family: 'raleway',sans-serif;
   background: #F6F6F6; }
 
-div, nav, header, footer, input, section, table {
+div, nav, header, footer, input, section, table, textarea {
   box-sizing: border-box; }
+
+#arrow {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  z-index: 1000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  opacity: 0;
+  transform: rotate(180deg); }
 
 .card {
   background: #fff;
@@ -39,6 +53,14 @@ nav {
     nav div#user div.avatar {
       width: 30%;
       float: left; }
+      nav div#user div.avatar span {
+        background: #eee;
+        border: 1px solid #999;
+        border-radius: 100%;
+        height: 60px;
+        width: 60px;
+        display: block;
+        margin-left: 20px; }
       nav div#user div.avatar img {
         margin-left: 20px;
         width: 60px;
@@ -221,6 +243,11 @@ section#main {
                 section#main div#content div#user-team div.list ul li a div.desc p {
                   font-size: 16px;
                   color: #aaa; }
+      section#main div#content div#user-team div.footer {
+        border-top: 1px solid #eee;
+        padding: 10px 30px; }
+        section#main div#content div#user-team div.footer .btn-tambah {
+          display: block; }
     section#main div#content div.list-table {
       width: 100%;
       padding: 30px 20px;
@@ -289,3 +316,113 @@ section#main {
 #dahsboard, #siswa {
   width: 100%;
   min-height: 1px; }
+
+div#form-tambah {
+  width: 70%;
+  background: #fff;
+  padding: 40px 20px;
+  box-shadow: 0 1px 2px 0 #ccc;
+  margin: 20px 20px; }
+  div#form-tambah label {
+    font-family: 'montserrat',sans-serif;
+    margin-bottom: 10px;
+    display: block;
+    color: #444; }
+    div#form-tambah label.radio {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 0;
+      display: inline-block;
+      font-weight: 300;
+      font-family: 'raleway',sans-serif; }
+      div#form-tambah label.radio input {
+        margin-right: 10px; }
+  div#form-tambah div.row {
+    margin: 15px 0; }
+    div#form-tambah div.row::after {
+      content: "";
+      display: block;
+      clear: both; }
+    div#form-tambah div.row button.btn-tambah {
+      background: #55AF7A;
+      color: #fff;
+      padding: 10px 20px;
+      font-family: 'montserrat',sans-serif;
+      border: none;
+      box-shadow: 0 1px 1px 0 #ccc;
+      border-radius: 3px;
+      position: relative;
+      padding-right: 60px; }
+      div#form-tambah div.row button.btn-tambah span {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: #4CA16F; }
+        div#form-tambah div.row button.btn-tambah span i {
+          font-size: 15px; }
+    div#form-tambah div.row input[type="text"], div#form-tambah div.row input[type="number"], div#form-tambah div.row input[type="password"], div#form-tambah div.row input[type="email"], div#form-tambah div.row textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      color: #666;
+      font-weight: 400;
+      border-radius: 3px;
+      width: 100%;
+      font-family: 'montserrat',sans-serif; }
+      div#form-tambah div.row input[type="text"]:focus, div#form-tambah div.row input[type="number"]:focus, div#form-tambah div.row input[type="password"]:focus, div#form-tambah div.row input[type="email"]:focus, div#form-tambah div.row textarea:focus {
+        border: 1px solid #365DCF;
+        outline: none;
+        color: #365dcf; }
+      div#form-tambah div.row input[type="text"]::-webkit-input-placeholder, div#form-tambah div.row input[type="number"]::-webkit-input-placeholder, div#form-tambah div.row input[type="password"]::-webkit-input-placeholder, div#form-tambah div.row input[type="email"]::-webkit-input-placeholder, div#form-tambah div.row textarea::-webkit-input-placeholder {
+        color: #aaa;
+        font-family: 'raleway',sans-serif; }
+    div#form-tambah div.row div.col-100 {
+      width: 100%;
+      padding: 0 10px; }
+    div#form-tambah div.row div.col-66 {
+      width: 66.666666%;
+      padding: 0 10px;
+      float: left; }
+    div#form-tambah div.row div.col-50 {
+      width: 50%;
+      float: left;
+      padding: 0 10px; }
+    div#form-tambah div.row div.col-33 {
+      float: left;
+      padding: 0 10px;
+      width: 33.33333333%; }
+    div#form-tambah div.row div.col-15 {
+      float: left;
+      padding: 0 10px;
+      width: 15%; }
+
+.btn-tambah {
+  background: #55AF7A;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: 'montserrat',sans-serif;
+  border: none;
+  box-shadow: 0 1px 1px 0 #ccc;
+  border-radius: 3px;
+  position: relative;
+  padding-right: 60px;
+  text-decoration: none; }
+  .btn-tambah:after {
+    content: "\f2c7";
+    font-family: 'ionicons';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background: #4CA16F; }
+  .btn-tambah span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background: #4CA16F; }
+    .btn-tambah span i {
+      font-size: 15px; }

@@ -24,8 +24,24 @@ body {
 	background: #F6F6F6;
 }
 
-div,nav,header,footer,input,section,table {
+div,nav,header,footer,input,section,table, textarea {
 	box-sizing:border-box;
+}
+
+
+#arrow {
+	background:rgba(0,0,0,0.8);
+	position: fixed;
+	bottom:10px;
+	right:10px;
+	padding:10px;
+	color:#fff;
+	font-size:20px;
+	z-index:1000;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	opacity: 0;
+	transform:rotate(180deg);
 }
 
 .card {
@@ -59,6 +75,15 @@ nav {
 		div.avatar {
 			width:30%;
 			float:left;
+			span {
+				background:#eee;
+				border:1px solid #999;
+				border-radius: 100%;
+				height:60px;
+				width:60px;
+				display: block;
+				margin-left: 20px;
+			}
 			img {
 				margin-left:20px;
 				width:60px;
@@ -328,6 +353,14 @@ section#main {
 					}
 				}
 			}
+
+			div.footer {
+				border-top:1px solid #eee;
+				padding:10px 30px;
+				.btn-tambah {
+					display: block;
+				}
+			}
 		}
 		div.list-table {
 			width:100%;
@@ -431,4 +464,150 @@ section#main {
 #dahsboard,#siswa {
 	width:100%;
 	min-height: 1px;
+}
+
+
+
+
+
+
+div#form-tambah {
+	width:70%;
+	background:#fff;
+	padding:40px 20px;
+	box-shadow: 0 1px 2px 0 #ccc;
+	margin:20px 20px;
+	
+	label {
+		@include montserrat;
+		margin-bottom: 10px;
+		display: block;
+		color:#444;
+		&.radio {
+			// margin-top:35px;
+			padding-left:10px;
+			padding-right:10px;
+			margin-bottom:0;
+			display: inline-block;
+			font-weight: 300;
+			@include raleway;
+
+			input {
+				margin-right:10px;
+			}
+		}
+	}
+	div.row {
+		margin:15px 0;
+		&::after {
+			content:"";
+			display: block;
+			clear:both;
+		}
+		button.btn-tambah {
+			background: #55AF7A;
+			color:#fff;
+			padding:10px 20px;
+			@include montserrat;
+			border:none;
+			box-shadow: 0 1px 1px 0 #ccc;
+			border-radius: 3px;
+			position: relative;
+			padding-right: 60px;
+			span {
+				position: absolute;
+				top:0;
+				bottom:0;
+				right:0;
+				padding:10px;
+				background:#4CA16F;
+				i {
+					font-size:15px;
+				}
+			}
+		}
+
+		input[type="text"],input[type="number"], input[type="password"], input[type="email"], textarea {
+			padding:10px;
+			border:1px solid #ccc;
+			color:#666;
+			font-weight: 400;
+			border-radius: 3px;
+			width:100%;
+			@include montserrat;
+
+			&:focus {
+				border:1px solid #365DCF;
+				outline:none;
+				color:#365dcf;
+			}
+			&::-webkit-input-placeholder{
+				color:#aaa;
+				@include raleway;
+			}
+		}
+		div.col-100 {
+			width:100%;
+			padding:0 10px;
+		}
+		div.col-66 {
+			width:66.666666%;
+			padding:0 10px;
+			float:left;
+		}
+		div.col-50 {
+			width:50%;
+			float:left;
+			padding:0 10px;
+		}
+		div.col-33 {
+			float:left;
+			padding:0 10px;
+			width:33.33333333%;
+		}
+		div.col-15 {
+			float:left;
+			padding:0 10px;
+			width:15%;
+		}
+	}
+}
+
+
+
+
+.btn-tambah {
+			background: #55AF7A;
+			color:#fff;
+			padding:10px 20px;
+			@include montserrat;
+			border:none;
+			box-shadow: 0 1px 1px 0 #ccc;
+			border-radius: 3px;
+			position: relative;
+			padding-right: 60px;
+			text-decoration: none;
+
+			&:after {
+				content:"\f2c7";
+				font-family: 'ionicons';
+				position: absolute;
+				top:0;
+				bottom:0;
+				right:0;
+				padding:10px;
+				background:#4CA16F;
+			}
+
+			span {
+				position: absolute;
+				top:0;
+				bottom:0;
+				right:0;
+				padding:10px;
+				background:#4CA16F;
+				i {
+					font-size:15px;
+				}
+			}
 }
