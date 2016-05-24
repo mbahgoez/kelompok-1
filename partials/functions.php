@@ -1,15 +1,20 @@
 <?php
 
-// Functions and Connections
-
-$server = "localhost";
-$user = "root";
-$pass = "";
-$db = "";
-
-$connect = mysql_connect($server, $user, $pass) or die(mysql_error());
-
+// Functions
 
 function siteUrl($url){
 	echo "http://".$_SERVER['SERVER_NAME']."/design-adm/".$url;
+}
+
+
+function directToLogin(){
+	if(!isset($_SESSION["user"])){
+ 		header("Location:http://localhost/design-adm/login.php");
+ 	}
+}
+
+function directToIndex(){
+	if(isset($_SESSION["user"])){
+ 		header("Location:http://localhost/design-adm/");
+ 	}
 }

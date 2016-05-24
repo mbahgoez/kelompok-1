@@ -1,7 +1,6 @@
 <?php 
-include "../../../partials/functions.php";
 include "../../../partials/koneksi.php";
-directToLogin();
+include "../../../partials/functions.php"; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,37 +18,50 @@ directToLogin();
 	
 	
 	<section id="main">
-	<?php include "../../../partials/header.php"; ?>
+	<?php include "../../../partials/header.php"; 
+		$nis = $_GET['nis'];
+		$tampilkan = mysql_query("SELECT * FROM siswa WHERE nis = $nis");
+		$hasil = mysql_fetch_array($tampilkan);
+	?>
 		<div id="content">
-			<form action="ProsesTambahSiswa.php" method="post">
+			<form action="http://localhost/design-adm/pages/form/Update/ProsesUpdateSiswa.php?nisSebelum=<?php echo $nis; ?>" method="post">
 				<div id="form-tambah">
 					<div class="row">
 						<div class="col-33">
 							<label>NIS</label>
-							<input type="number" name="nis" placeholder="NIS" required>
+							<input type="number" name="nis" value="<?php echo $hasil[0]; ?>" required>
 						</div>
 					
 						<div class="col-66">
 							<label>Fullname</label>
-							<input type="text" name="nama_lengkap" placeholder="Please Enter Your Name" required>
+							<input type="text" name="nama_lengkap" value="<?php echo $hasil[1]; ?>" required>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-100">
 							<label>ID Jurusan</label>
-							<input type="text" name="id_juru" placeholder="Number" required>
+							<input type="text" name="id_juru" value="<?php echo $hasil[2]; ?>" required>
 						</div>
 					</div>
 					<div class="row">
-						<label for="">Jenis Kelamin</label>
+						<label>Jenis Kelamin</label>
+                        <?php
+						if ($hasil[3] == 'L'){
+						echo'
+						<label class="radio"><input type="radio" name="jk" value="L" required checked>Laki - laki</label> 
+						<label class="radio"><input type="radio" name="jk" value="P" required>Perempuan</label>';
+						}else{
+						echo'
 						<label class="radio"><input type="radio" name="jk" value="L" required>Laki - laki</label>
-						<label class="radio"><input type="radio" name="jk" value="P" required>Perempuan</label>
+						<label class="radio"><input type="radio" name="jk" value="P" required checked>Perempuan</label>';
+						}
+						?>
 					</div>
 
 					<div class="row">
 						<div class="col-100">
 							<label for="">Alamat Rumah</label>
-							<input type="text" name="alamat" placeholder="Masukan Alamat" required>
+							<input type="text" name="alamat" value="<?php echo $hasil[4]; ?>" required>
 						</div>
 					</div>
 

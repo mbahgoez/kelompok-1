@@ -5,5 +5,5 @@
 		</a>
 		<h2>DASHBOARD ADMIN</h2>
 	</div>
-	<a href="#" id="keluar"><i class="icon ion-log-out"></i> Keluar</a>
+	<a href="keluar.php" id="keluar"><i class="icon ion-log-out"></i> Keluar</a>
 </header>

@@ -1,5 +1,9 @@
 <?php 
 include "partials/functions.php"; 
+include "partials/koneksi.php";
+
+directToLogin();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,8 +28,10 @@ include "partials/functions.php";
 	<section id="main">
 		<?php include "partials/header.php"; ?>
 		<div id="content">
-			
-			<?php include "partials/list/user.php"; ?>
+			<div id="dashboard">		
+				<?php include "partials/list/user.php"; ?>
+				<?php include "partials/welcome.php"; ?>
+			</div><!-- id dashboard and user admin -->
 			
 			<?php include "partials/list/siswa.php"; ?>
 

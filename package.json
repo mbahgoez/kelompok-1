@@ -1,0 +1,31 @@
+{
+  "name": "crud-php-mysql",
+  "version": "1.0.0",
+  "description": "Web Apps Crud dengan menggunakan PHP sebagai bahasa pemrogramannya, XI RPL 2 (Kelompok 1/Team Assasins) T.H 2015/2016",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^2.3.1",
+    "gulp-connect-php": "^0.0.7",
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbahgoez/design-dashboard.git"
+  },
+  "keywords": [
+    "php",
+    "crud",
+    "mysql"
+  ],
+  "author": "Bagus <bagus.mantonafi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbahgoez/design-dashboard/issues"
+  },
+  "homepage": "https://github.com/mbahgoez/design-dashboard#readme"
+}

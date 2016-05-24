@@ -1,4 +1,8 @@
-<?php include "../../../partials/functions.php"; ?>
+<?php 
+include "../../../partials/functions.php"; 
+include "../../../partials/koneksi.php";
+directToLogin();
+?>
 
 <!DOCTYPE html>
 <html lang="en">

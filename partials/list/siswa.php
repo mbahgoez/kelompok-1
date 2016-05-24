@@ -23,261 +23,35 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>1</td>
-								<td>2446</td>
-								<td>Bagus Mantonafi</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
+                        <?php
+							$urut = 1;
+							$tampilkan = mysql_query("select * from siswa");
+							while ($hasil = mysql_fetch_array($tampilkan)){
+								echo' 
+								<tr>
+								<td>'.$urut.'</td>
+								<td>'.$hasil[0].'</td>
+								<td>'.$hasil[1].'</td>
+								<td>'.$hasil[2].'</td>
+								<td>'.$hasil[3].'</td>
+								<td>'.$hasil[4].'</td>
 								<td>
-									<a href="" class="hapus">
+									<a href="http://localhost/design-adm/pages/form/Hapus/ProsesHapusSiswa.php?nis='.$hasil[0].'" class="hapus">
 										HAPUS
 									<i class="icon ion-ios-trash-outline"></i>
 									</a>
 								</td>
 
 								<td>
-									<a href="" class="edit">
+									<a href="http://localhost/design-adm/pages/form/update/UpdateSiswa.php?nis='.$hasil[0].'" class="edit">
 										EDIT
 									<i class="icon ion-edit"></i>
 									</a>
 								</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>2447</td>
-								<td>Bagus Krisna</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>2448</td>
-								<td>Hendry Roganda</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>2449</td>
-								<td>Jaya Temara</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>2450</td>
-								<td>Sholahudin</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>2451</td>
-								<td>Aditya Pratama</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-
-
-
-							<tr>
-								<td>1</td>
-								<td>2446</td>
-								<td>Bagus Mantonafi</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>2447</td>
-								<td>Bagus Krisna</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>2448</td>
-								<td>Hendry Roganda</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>2449</td>
-								<td>Jaya Temara</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>2450</td>
-								<td>Sholahudin</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>2451</td>
-								<td>Aditya Pratama</td>
-								<td>RPL</td>
-								<td>Laki - Laki</td>
-								<td>Denpasar, ID</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
+							</tr>';
+							$urut++;
+							}
+							?>
 						</tbody>
 					</table>
 				</div><!-- scrolling -->

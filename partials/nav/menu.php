@@ -7,8 +7,8 @@
 		<span></span>
 	</div>
 	<div class="profil">
-		<h1>Bagus Mantonafi</h1>
-		<h2>ADMIN</h2>
+		<h1><?php echo $_SESSION["nama"]; ?></h1>
+		<h2><?php echo $_SESSION["bio"]; ?></h2>
 	</div>
 </div>
 <div id="menu">
