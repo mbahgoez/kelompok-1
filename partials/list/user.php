@@ -6,70 +6,25 @@
 		</div>
 		<div class="list">
 			<ul>
+				<?php
+				$query = mysql_query("SELECT * FROM user");
+				?>
+				<?php while($data = mysql_fetch_array($query)){?>
 				<li>
 					<div class="item">
 						<span class="avatar"></span>
 						<div class="desc">
-							<h6 class="name">Bagus Mantonafi</h6>
-							<p>Full-Stack Developer</p>
+							<h6 class="name"><?php echo $data["nama_lengkap"]; ?></h6>
+							<p><?php echo $data["bio"]; ?></p>
 						</div>
-						<a href=""></a>
+						<a class="hapus" href="pages/form/hapus/ProsesHapusUser.php?user=<?php echo $data["user_name"]; ?>"></a>
 					</div>
 				</li>
-				<li>
-					<div class="item">
-						<span class="avatar"></span>
-						<div class="desc">
-							<h6 class="name">Sholahudin</h6>
-							<p>Front-end Developer</p>
-						</div>
-						<a href=""></a>
-					</div>
-				</li>
-				<li>
-					<div class="item">
-						<span class="avatar"></span>
-						<div class="desc">
-							<h6 class="name">Jaya Temara</h6>
-							<p>Game Developer</p>
-						</div>
-						<a href=""></a>
-					</div>
-				</li>
-				<li>
-					<div class="item">
-						<span class="avatar"></span>
-						<div class="desc">
-							<h6 class="name">Hendry Roganda</h6>
-							<p>Master Gamer</p>
-						</div>
-						<a href=""></a>
-					</div>
-				</li>
-				<li>
-					<div class="item">
-						<span class="avatar"></span>
-						<div class="desc">
-							<h6 class="name">Bagus Krisna</h6>
-							<p>DJ</p>
-						</div>
-						<a href=""></a>
-					</div>
-				</li>
-				<li>
-					<div class="item">
-						<span class="avatar"></span>
-						<div class="desc">
-							<h6 class="name">Aditya Pratama</h6>
-							<p>Futsal Lovers</p>
-						</div>
-						<a href=""></a>
-					</div>
-				</li>
+				<?php } ?>
 			</ul>
 		</div>
 		<div class="footer">
-			<a href="pages/form/tambah/user.php" class="btn-tambah">TAMBAH USER</a>
+			<a href="pages/form/tambah/TambahUser.php" class="btn-tambah">TAMBAH USER</a>
 		</div>
 	</div>
 </div><!-- user team -->

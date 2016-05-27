@@ -22,7 +22,7 @@
 	<?php include "../../../partials/header.php"; ?>
 
 		<div id="content">
-			<form action="">
+			<form action="ProsesTambahJurusan.php" method="POST">
 				<div id="form-tambah">
 					<div class="row">
 						<div class="col-100">

@@ -1,13 +1,13 @@
 <?php 
-	include "../../../partials/functions.php"; 
-	include "../../../partials/koneksi.php";
-	directToLogin();
+include "../../../partials/functions.php";
+include "../../../partials/koneksi.php"; 
+directToLogin();
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Tambah Guru</title>
+	<title>Tambah User</title>
 	<link rel="stylesheet" href="<?php echo siteUrl('css/ionicons.min.css'); ?>">
 	<link rel="stylesheet" href="<?php echo siteUrl('css/style.css'); ?>">
 </head>
@@ -22,34 +22,33 @@
 	<?php include "../../../partials/header.php"; ?>
 
 		<div id="content">
-			<form action="">
+			<form action="ProsesTambahUser.php" method="post">
 				<div id="form-tambah">
 					<div class="row">
 						<div class="col-33">
-							<label>ID Guru</label>
-							<input type="text" name="id_guru" placeholder="ID Guru" required>
+							<label>Username </label>
+							<input type="text" name="user_name" placeholder="Please Enter Your Username">
 						</div>
 						<div class="col-66">
-							<label>Nama Guru</label>
-							<input type="text" name="nama_guru" placeholder="Please Enter Fullname" required>
+							<label>Nama Lengkap </label>
+							<input type="text" name="full_name" placeholder="Please Enter Your Username">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-100">
-							<label>Jenis Kelamin</label>
-							<label class="radio">
-								<input type="radio" name="jk" value="l" required>Laki - laki
-							</label>
-							<label class="radio">
-								<input type="radio" name="jk" value="p" required>Perempuan
-							</label>
+						<div class="col-50">
+							<label>Password</label>
+							<input type="password" name="password" placeholder="Please Enter Your Password">
+						</div>
+						<div class="col-50">
+							<label>Re-Type Password</label>
+							<input type="password" name="re_password" placeholder="Please Enter Your Re-Password">
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-100">
-							<label>Alamat</label>
-							<textarea name="alamat" id="" cols="88" rows="10" required></textarea>
+							<label>Bio</label>
+							<textarea name="bio"  cols="88" rows="10"></textarea>
 						</div>
 					</div>
 					

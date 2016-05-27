@@ -6,7 +6,7 @@ include "../../../partials/functions.php";
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Tambah Siswa</title>
+	<title>Perbarui Siswa</title>
 	<link rel="stylesheet" href="<?php echo siteUrl('css/ionicons.min.css'); ?>">
 	<link rel="stylesheet" href="<?php echo siteUrl('css/style.css'); ?>">
 </head>
@@ -69,7 +69,7 @@ include "../../../partials/functions.php";
 					
 					<div class="row">
 						<div class="col-100" align="right">
-							<button class="btn-tambah" type="submit">TAMBAH <span><i class="icon ion-android-add"></i></span></button>
+							<button class="btn-tambah" type="submit">PERBARUI <span><i class="icon ion-android-add"></i></span></button>
 						</div>
 					</div>
 

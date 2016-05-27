@@ -200,7 +200,7 @@
 <body>
 	<div class="row">
 		<h1><i class="icon ion-ios-pulse-strong"></i>Memanage Web-Apps<span>Beta 0.5</span></h1>
-		<p><!-- <b>SMK TI BALI GLOBAL</b> merupakan Sekolah IT pertama di Bali. setidaknya terdapat 5 jurusan yang terbuka di SMK TI Bali Global Denpasar yaitu : RPL (Rekayasa Perangkat Lunak), MM(Multimedia), TKJ(Teknik Komputer Jaringan), AN(Animasi), DKV(Desain Komunikasi Visual). --> Website ini adalah website CRUD yang dirancang untuk keperluan memanage atau mempermudah sisi Manajemen. Semoga anda senang dan nyaman dengan adanya website ini. cheers!</p>
+		<p>Website ini adalah website CRUD yang dirancang untuk keperluan memanage atau mempermudah sisi Manajemen. Semoga anda senang dan nyaman dengan adanya website ini. Cheers!</p>
 		<i class="icon ion-ios-arrow-down animate"></i>
 	</div>
 	<div class="content">

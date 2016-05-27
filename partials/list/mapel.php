@@ -1,3 +1,7 @@
+<?php
+	$sql = mysql_query('select * from pelajaran');
+?>
+
 <div id="mapel">
 	<div class="list-table">
 		<div class="card">
@@ -7,7 +11,7 @@
 			</div>
 			<div class="command">
 				
-				<a href="pages/form/tambah/mapel.php" class="btn-tambah">TAMBAH MATA PELAJARAN</a>
+				<a href="pages/form/tambah/TambahMapel.php" class="btn-tambah">TAMBAH MATA PELAJARAN</a>
 			</div>
 			<div class="list">
 				<div class="scrolling">
@@ -23,110 +27,34 @@
 							</tr>
 						</thead>
 						<tbody>
+						<?php 
+							$i=1;
+while($data= mysql_fetch_array($sql)){
+							?>
 							<tr>
-								<td>1</td>
-								<td>MP01</td>
-								<td>Pemrograman Berorientasi Objek</td>
-								<td>XI RPL 2</td>
-								<td>P01</td>
+								<td><?php echo $i++;?></td>
+								<td><?php echo $data['id_pelajaran'];?></td>
+								<td><?php echo $data['nama_pelajaran'];?></td>
+								<td><?php echo $data['kelas'];?></td>
+								<td><?php echo $data['id_guru'];?></td>
 								<td>
-									<a href="" class="hapus">
+									<a href="pages/form/hapus/ProsesHapusMapel.php?id=<?php echo $data['id_pelajaran']?>" class="hapus">
 										HAPUS
 									<i class="icon ion-ios-trash-outline"></i>
 									</a>
 								</td>
 
 								<td>
-									<a href="" class="edit">
+									<a href="pages/form/update/UpdateMapel.php?id=<?php echo $data['id_pelajaran']; ?>" class="edit">
 										EDIT
 									<i class="icon ion-edit"></i>
 									</a>
 								</td>
 							</tr>
-
-							<tr>
-								<td>2</td>
-								<td>MP02</td>
-								<td>Basis Data</td>
-								<td>XI RPL 2</td>
-								<td>P02</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-
-							<tr>
-								<td>3</td>
-								<td>MP03</td>
-								<td>Pemrograman Web Dinamis</td>
-								<td>XI RPL 2</td>
-								<td>P03</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-
-							<tr>
-								<td>4</td>
-								<td>MP04</td>
-								<td>Pemrograman Dasar</td>
-								<td>XI RPL 2</td>
-								<td>P04</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-
-							<tr>
-								<td>5</td>
-								<td>MP05</td>
-								<td>Pemodelan RPL</td>
-								<td>XI RPL 2</td>
-								<td>P05</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>					
+						
+							<?php 
+								}
+							?>					
 						</tbody>
 					</table>
 				</div><!-- scrolling -->

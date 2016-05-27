@@ -6,7 +6,7 @@
 				<hr>
 			</div>
 			<div class="command">
-				<a href="pages/form/tambah/siswa.php" class="btn-tambah">TAMBAH SISWA</a>
+				<a href="pages/form/tambah/TambahSiswa.php" class="btn-tambah">TAMBAH SISWA</a>
 			</div>
 			<div class="list">
 				<div class="scrolling">

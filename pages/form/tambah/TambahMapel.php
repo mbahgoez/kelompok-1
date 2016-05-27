@@ -1,13 +1,13 @@
-<?php 
+<?php
 include "../../../partials/functions.php";
-include "../../../partials/koneksi.php"; 
+include "../../../partials/koneksi.php";
 directToLogin();
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Tambah User</title>
+	<title>Tambah Mata Pelajaran</title>
 	<link rel="stylesheet" href="<?php echo siteUrl('css/ionicons.min.css'); ?>">
 	<link rel="stylesheet" href="<?php echo siteUrl('css/style.css'); ?>">
 </head>
@@ -22,29 +22,31 @@ directToLogin();
 	<?php include "../../../partials/header.php"; ?>
 
 		<div id="content">
-			<form action="">
+			<form action="ProsesTambahMapel.php" method="POST">
 				<div id="form-tambah">
 					<div class="row">
 						<div class="col-100">
-							<label>Username </label>
-							<input type="text" name="user_name" placeholder="Please Enter Your Username" value="Bagus Mantonafi">
+							<label>ID Pelajaran</label>
+							<input type="text" name="id_pelajaran" placeholder="ID Pelajaran" required>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-50">
-							<label>Password</label>
-							<input type="password" name="password" placeholder="Please Enter Your Password">
+						<div class="col-100">
+							<label>Nama Pelajaran</label>
+							<input type="text" name="nama_pelajaran" placeholder="Nama Pelajaran" required>
 						</div>
-						<div class="col-50">
-							<label>Re-Type Password</label>
-							<input type="password" name="re_password" placeholder="Please Enter Your Re-Password">
+					</div>
+					<div class="row">
+						<div class="col-100">
+							<label>Kelas</label>
+							<input type="text" name="kelas" placeholder="Kelas" required>
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-100">
-							<label>Bio</label>
-							<textarea name="" id="" cols="88" rows="10"></textarea>
+							<label>ID Guru</label>
+							<input type="text" name="id_guru" placeholder="ID Guru" required>
 						</div>
 					</div>
 					

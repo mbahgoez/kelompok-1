@@ -1,3 +1,7 @@
+<?php
+    $query = mysql_query("SELECT * FROM jurusan");
+    $i = 1;
+?>
 <div id="jurusan">
 	<div class="list-table">
 		<div class="card">
@@ -7,7 +11,7 @@
 			</div>
 			<div class="command">
 				
-				<a href="pages/form/tambah/jurusan.php" class="btn-tambah">TAMBAH JURUSAN</a>
+				<a href="pages/form/tambah/TambahJurusan.php" class="btn-tambah">TAMBAH JURUSAN</a>
 			</div>
 			<div class="list">
 				<div class="scrolling">
@@ -21,102 +25,26 @@
 							</tr>
 						</thead>
 						<tbody>
+                        <?php while($data = mysql_fetch_array($query)){ ?>
 							<tr>
-								<td>1</td>
-								<td>RPL</td>
-								<td>Rekayasa Perangkat Lunak</td>
+								<td><?php echo $i++; ?></td>
+								<td><?php echo $data["id_jurusan"]; ?></td>
+								<td><?php echo $data["jurusan"]; ?></td>
 								<td>
-									<a href="" class="hapus">
+									<a href="pages/form/hapus/ProsesHapusJurusan.php?id=<?php echo $data["id_jurusan"]; ?>" class="hapus">
 										HAPUS
 									<i class="icon ion-ios-trash-outline"></i>
 									</a>
 								</td>
 
 								<td>
-									<a href="" class="edit">
+									<a href="pages/form/update/UpdateJurusan.php?id=<?php echo $data["id_jurusan"]; ?>" class="edit">
 										EDIT
 									<i class="icon ion-edit"></i>
 									</a>
 								</td>
 							</tr>
-
-							<tr>
-								<td>2</td>
-								<td>MM</td>
-								<td>Multimedia</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-
-							<tr>
-								<td>3</td>
-								<td>TKJ</td>
-								<td>Teknik Komputer Jaringan</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-
-							<tr>
-								<td>4</td>
-								<td>AN</td>
-								<td>Animasi</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>DKV</td>
-								<td>Desain Komunikasi Visual</td>
-								<td>
-									<a href="" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
-
-								<td>
-									<a href="" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>
-
-
-							
+							<?php } ?>
 						</tbody>
 					</table>
 				</div>
