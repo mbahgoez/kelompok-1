@@ -6,15 +6,9 @@
 	$nis = $_GET['nis'];
 	
 	//query
-	$hapus = mysql_query("delete from siswa where nis = $nis");
+	$hapus = mysql_query("DELETE FROM siswa WHERE nis = $nis");
 	
 	//pesan
-	if ($hapus){
-		echo "<script>alert('Berhasil dihapus');
-		location.href ='http://localhost/design-adm/index.php#siswa';
-		</script>";
-	}else
-		echo "<script>alert('GAGAL dihapus');
-		location.href =''http://localhost/design-adm/index.php#siswa';
-		</script>";
-?>
+	if($hapus){
+		directMsg("Data Siswa Berhasil Dihapus!", "#siswa")	
+	}

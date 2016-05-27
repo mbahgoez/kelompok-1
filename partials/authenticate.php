@@ -15,10 +15,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 			$_SESSION["nama"] = $user["nama_lengkap"];
 			$_SESSION["bio"] = $user["bio"];
 
-			header("Location:http://localhost/design-adm/");
+			header(directToIndex());
 		}
 		else {
-			header("Location:http://localhost/design-adm/login.php");
+			header(directToLogin());
 		}
 	}
 }

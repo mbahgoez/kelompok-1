@@ -1,12 +1,11 @@
 <?php
-include "partials/koneksi.php";
+include "partials/functions.php";
+error_reporting();
 
+session_start();
+session_unset();
 session_destroy();
 
-if(empty($_SESSION["user"])){
-	header("Location:http://localhost/design-adm/login.php");
-}
-else {
-	session_destroy();
-	header("Location:http://localhost/design-adm/login.php");
-}
+header(directToLogin());
+
+exit();

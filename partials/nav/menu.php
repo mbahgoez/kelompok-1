@@ -1,15 +1,4 @@
-<?php
-function numTable($primary,$table){
-	$sql = mysql_query("SELECT $primary FROM $table");
-	echo mysql_num_rows($sql);
-}
-?>
-
 <div id="user">
-<!-- 	<div class="avatar">
-		<img src="image/user/bagus.jpg">
-	</div> -->
-
 	<div class="avatar">
 		<span></span>
 	</div>
@@ -21,13 +10,13 @@ function numTable($primary,$table){
 <div id="menu">
 	<ul>
 		<li class="active">
-			<a href="http://localhost/design-adm/index.php#dashboard">
+			<a href="<?php siteUrl("#dashboard"); ?>">
 				<i class="icon ion-ios-analytics-outline"></i>
 				DASHBOARD
 			</a>
 		</li>
 		<li>
-			<a href="http://localhost/design-adm/index.php#dashboard">
+			<a href="<?php siteUrl("#dashboard"); ?>">
 				<i class="icon ion-ios-people"></i>
 				USER ADMIN
 			</a>
@@ -36,28 +25,28 @@ function numTable($primary,$table){
 			</span>
 		</li>
 		<li>
-			<a href="http://localhost/design-adm/index.php#siswa">
+			<a href="<?php siteUrl("#siswa"); ?>">
 				<i class="icon ion-university"></i>
 				SISWA TERDAFTAR
 			</a>
 			<span class="badge"><?php numTable("NIS","siswa"); ?></span>
 		</li>
 		<li>
-			<a href="http://localhost/design-adm/index.php#guru">
+			<a href="<?php siteUrl("#guru"); ?>">
 				<i class="icon ion-person-stalker"></i>
 				GURU PENGAJAR
 			</a>
 			<span class="badge"><?php numTable("id_guru","guru"); ?></span>
 		</li>
 		<li>
-			<a href="http://localhost/design-adm/index.php#mapel">
+			<a href="<?php siteUrl("#mapel"); ?>">
 				<i class="icon ion-ios-bookmarks-outline"></i>
 				MATA PELAJARAN
 			</a>
 			<span class="badge"><?php numTable("id_pelajaran","pelajaran"); ?></span>
 		</li>
 		<li>
-			<a href="http://localhost/design-adm/index.php#jurusan">
+			<a href="<?php siteUrl("#jurusan"); ?>">
 				<i class="icon ion-erlenmeyer-flask"></i>
 				JURUSAN
 			</a>

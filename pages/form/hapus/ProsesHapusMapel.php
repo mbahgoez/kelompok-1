@@ -1,14 +1,10 @@
 <?php 
-	include ("../../../partials/koneksi.php");
+	include("../../../partials/koneksi.php");
+	include("../../../partials/functions.php");
+
 	$id= $_GET['id'];
-	$query= mysql_query("delete from pelajaran where id_pelajaran='$id'");
+	$query= mysql_query("DELETE FROM pelajaran WHERE id_pelajaran='$id'");
 	
 	if($query){
-		?>
-		<script>
-			alert("Data telah berhasil dihapus!");
-			location.href="http://localhost/design-adm/index.php#mapel";
-		</script>
-	<?php
+		directMsg("Data Mata Pelajaran Berhasil Dihapus!", "#mapel");
 	}
-?>
