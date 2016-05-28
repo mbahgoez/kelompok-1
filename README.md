@@ -7,19 +7,19 @@ T.H 2015/2016
 1. Bagus Mantonafi (Fullstack Developer & Web Designer)
 	user : bagus
 	pass : 1234
-2. Bagus Krisna (Backend/CRUD)
+2. Bagus Krisna (Back-End/CRUD)
 	user : xxxx
 	pass : xxxx
-3. Hendry Roganda (Backend/CRUD)
+3. Hendry Roganda (Back-End/CRUD)
 	user : xxxx
 	pass : xxxx
-4. Sholahudin (Backend/CRUD)
+4. Sholahudin (Back-End/CRUD)
 	user : xxxx
 	pass : xxxx
-5. Jaya Temara (Backend/CRUD & Database)
+5. Jaya Temara (Back-End/CRUD & Database)
 	user : xxxx
 	pass : xxxx
-6. Aditya Putra (Backend/CRUD)
+6. Aditya Putra (Back-End/CRUD)
 	user : xxxx
 	pass : xxxx
 
@@ -45,7 +45,6 @@ pages/
 partials/
 	list/
 	nav/
-	
 	header.php
 	koneksi.php
 	functions.php
@@ -62,8 +61,8 @@ scss/
 sass scss/style.scss:css/style.css --watch
 
 ### Menggunakan Gulp
-**1. install gulp dependecy menggunakan npm (node package manager)**
 
+**1. install gulp dependecy menggunakan npm (node package manager)**
 Windows
 
 ``` 

@@ -5,6 +5,4 @@
 	$id= $_GET['id'];
 	$query= mysql_query("DELETE FROM pelajaran WHERE id_pelajaran='$id'");
 	
-	if($query){
-		directMsg("Data Mata Pelajaran Berhasil Dihapus!", "#mapel");
-	}
+	cekQuery($query, "Data Mata Pelajaran Berhasil Dihapus!", "Data Mata Pelajaran Gagal Dihapus!", "#mapel");

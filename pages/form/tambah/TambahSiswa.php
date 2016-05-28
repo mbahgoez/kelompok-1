@@ -30,14 +30,14 @@ directToLogin();
 						</div>
 					
 						<div class="col-66">
-							<label>Fullname</label>
-							<input type="text" name="nama_lengkap" placeholder="Please Enter Your Name" required>
+							<label>Nama Lengkap</label>
+							<input type="text" name="nama_lengkap" placeholder="Masukan Nama Lengkap" required>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-100">
 							<label>ID Jurusan</label>
-							<input type="text" name="id_juru" placeholder="Number" required>
+							<input type="text" placeholder="RPL/MM/TKJ/AN/DKV" name="id_juru" placeholder="Number" required>
 						</div>
 					</div>
 					<div class="row">

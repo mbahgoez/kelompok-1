@@ -12,12 +12,7 @@
 	$alamat = $_POST['alamat'];
 	
 	//query
-	$tambah = mysql_query("insert into siswa values('$nis', '$nama_lengkap', '$id_jurusan', '$jk', '$alamat')") or die(mysql_error());
+	$tambah = mysql_query("insert into siswa values('$nis', '$nama_lengkap', '$id_jurusan', '$jk', '$alamat')");
 	
 	//pesan
-	if($tambah){
-		echo"<script> alert('Data Berhasil Ditambah');
-		location.href = 'http://localhost/design-adm/index.php#siswa';
-		</script>";
-	}
-?>
+	cekQuery($tambah, "Data Siswa Berhasil Ditambah!", "Data Siswa Gagal Ditambah!", "#siswa");

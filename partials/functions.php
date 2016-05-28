@@ -7,12 +7,12 @@ function siteUrl($url){
 }
 function directToLogin(){
 	if(!isset($_SESSION["user"])){
- 		header("Location:http://localhost/kelompok-1/login.php");
+ 		header("Location:http://".$_SERVER['SERVER_NAME']."/kelompok-1/login.php");
  	}
 }
 function directToIndex(){
 	if(isset($_SESSION["user"])){
- 		header("Location:http://localhost/kelompok-1/");
+ 		header("Location:http://".$_SERVER['SERVER_NAME']."/kelompok-1/");
  	}
 }
 function numTable($primary,$table){
@@ -26,4 +26,22 @@ function directMsg($msg, $url){
 		location.href = "<?php siteUrl($url); ?>";
 	</script>
 	<?php
+}
+function cekQuery($query, $msg1, $msg2, $url){
+
+	if($query){
+		?>
+		<script>
+			alert("<?php echo $msg1; ?>");
+			location.href = "<?php siteUrl($url); ?>";
+		</script>
+		<?php
+	} else {
+		?>
+		<script>
+			alert("<?php echo $msg2; ?>");
+			location.href = "<?php siteUrl($url); ?>";
+		</script>
+		<?php
+	}
 }

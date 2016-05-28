@@ -1,5 +1,6 @@
 <?php
 include "../../../partials/koneksi.php";
+include "../../../partials/functions.php";
 
 $id = $_GET['id'];
 $id_guru = $_POST['id_guru'];
@@ -9,12 +10,4 @@ $alamat = $_POST['alamat'];
 
 $query = mysql_query("UPDATE guru SET id_guru='$id_guru', nama_guru='$nama_guru', jk='$jk', alamat='$alamat' WHERE id_guru='$id'");
 
-
-if($query){
-    ?>
-    <script>
-        alert("Data Berhasil diperbarui!");
-        location.href = 'http://localhost/design-adm/index.php#guru';
-    </script>
-    <?php
-}
+cekQuery($query, "Data Guru Berhasil Diperbarui!", "Data Guru Gagal Diperbarui!", "#guru");

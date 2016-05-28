@@ -1,123 +1,183 @@
-/**
- Export to JSON plugin for PHPMyAdmin
- @version 0.1
- */
-
-// Database 'sekolah_bagol'
-
-// sekolah_bagol.guru
+[
+"swsws" {
+  {
+    "id_guru": "A01",
+    "nama_guru": "Kadek",
+    "jk": "L",
+    "alamat": "Jl. Batubulan 7"
+  },
+  {
+    "id_guru": "A02",
+    "nama_guru": "Ketut Nyamprut",
+    "jk": "L",
+    "alamat": "Jl. Sandat"
+  },
+  {
+    "id_guru": "A03",
+    "nama_guru": "Sudiarta",
+    "jk": "L",
+    "alamat": "Jl. Mawar"
+  },
+  {
+    "id_guru": "A04",
+    "nama_guru": "Bagas ",
+    "jk": "L",
+    "alamat": "Jl. Sedap Malam"
+  },
+  {
+    "id_guru": "A05",
+    "nama_guru": "Koncreng",
+    "jk": "P",
+    "alamat": "Jl. Waturenggong"
+  }
+],
 
 [
-	{
-		"id_guru":"A01",
-		"nama_guru":"Kadek",
-		"jk":"L",
-		"alamat":"Jl. Batubulan 7"
-	}, 
-	{
-		"id_guru":"A02",
-		"nama_guru":"Ketut Nyamprut",
-		"jk":"L",
-		"alamat":"Jl. Sandat"
-	}, 
-	{
-		"id_guru":"A03",
-		"nama_guru":"Sudiarta",
-		"jk":"L",
-		"alamat":"Jl. Mawar"
-	}, 
-	{
-		"id_guru":"A04",
-		"nama_guru":"Bagas ",
-		"jk":"L",
-		"alamat":"Jl. Sedap Malam"
-	}, 
-	{
-		"id_guru":"A05",
-		"nama_guru":"Koncreng",
-		"jk":"P",
-		"alamat":"Jl. Waturenggong"
-	}
-]
-
-// sekolah_bagol.jurusan
-
-[
-	{
-		"id_jurusan":"AN",
-		"jurusan":"Animasi"
-	}, 
-	{
-		"id_jurusan":"DKV",
-		"jurusan":"Desain Komunikasi Visual"
-	}, 
-	{
-		"id_jurusan":"MM",
-		"jurusan":"Multimedia"
-	}, 
-	{
-		"id_jurusan":"RPL",
-		"jurusan":"Rekayasa Perangkat Lunak"
-	}, 
-	{
-		"id_jurusan":"TKJ",
-		"jurusan":"Teknik Komputer Jaringan"
-	}
-]
+  {
+    "id_jurusan": "AN",
+    "jurusan": "Animasi"
+  },
+  {
+    "id_jurusan": "DKV",
+    "jurusan": "Desain Komunikasi Visual"
+  },
+  {
+    "id_jurusan": "MM",
+    "jurusan": "Multimedia"
+  },
+  {
+    "id_jurusan": "RPL",
+    "jurusan": "Rekayasa Perangkat Lunak"
+  },
+  {
+    "id_jurusan": "TKJ",
+    "jurusan": "Teknik Komputer Jaringan"
+  }
+],
 
 // sekolah_bagol.pelajaran
 
 [
-	{
-		"id_pelajaran":"P01",
-		"nama_pelajaran":"Pemrograman Web",
-		"kelas":"XI RPL 2",
-		"id_guru":"A01"
-	}, 
-	{
-		"id_pelajaran":"P02",
-		"nama_pelajaran":"Pemrograman Dasar",
-		"kelas":"XI RPL 3",
-		"id_guru":"A02"
-	}, 
-	{
-		"id_pelajaran":"P03",
-		"nama_pelajaran":"Basis Data",
-		"kelas":"XI RPL 4",
-		"id_guru":"A03"
-	}, 
-	{
-		"id_pelajaran":"P04",
-		"nama_pelajaran":"Pemrograman Desktop",
-		"kelas":"XI MM 3",
-		"id_guru":"A04"
-	}, 
-	{
-		"id_pelajaran":"P05",
-		"nama_pelajaran":"IPA",
-		"kelas":"XI TKJ 1","id_guru":"A05"
-	}
-]
-
-// sekolah_bagol.siswa
-
-[
-	{"NIS":"3","nama":"Lesi","id_jurusan":"3","jk":"P","alamat":"Jl. Tukad"}, 
-	{"NIS":"4","nama":"Dwiki","id_jurusan":"4","jk":"L","alamat":"Jl. Tukad Citarum"},
-	{"NIS":"1234","nama":"Sukijan","id_jurusan":"1","jk":"L","alamat":"Bandung"}, 
-	{"NIS":"2445","nama":"Bagus Krisna","id_jurusan":"1","jk":"L","alamat":"Denpasar"}, 
-	{"NIS":"2446","nama":"Bagus Mantonafi","id_jurusan":"1","jk":"L","alamat":"Denpasar"}, 
-	{"NIS":"2453","nama":"Hendry Roganda","id_jurusan":"1","jk":"L","alamat":"Denpasar"}
-]
-
-// sekolah_bagol.user
+  {
+    "id_pelajaran": "P01",
+    "nama_pelajaran": "Pemrograman Web",
+    "kelas": "XI RPL 2",
+    "id_guru": "A01"
+  },
+  {
+    "id_pelajaran": "P02",
+    "nama_pelajaran": "Pemrograman Dasar",
+    "kelas": "XI RPL 3",
+    "id_guru": "A02"
+  },
+  {
+    "id_pelajaran": "P03",
+    "nama_pelajaran": "Basis Data",
+    "kelas": "XI RPL 4",
+    "id_guru": "A03"
+  },
+  {
+    "id_pelajaran": "P04",
+    "nama_pelajaran": "Pemrograman Desktop",
+    "kelas": "XI MM 3",
+    "id_guru": "A04"
+  },
+  {
+    "id_pelajaran": "P05",
+    "nama_pelajaran": "IPA",
+    "kelas": "XI TKJ 1",
+    "id_guru": "A05"
+  }
+],
 
 [
-	{"user_name":"Adit","password":"admin","nama_lengkap":"","bio":""}, 
-	{"user_name":"admin","password":"admin","nama_lengkap":"","bio":""}, 
-	{"user_name":"Gusman","password":"admin","nama_lengkap":"Bagus Mantonafi","bio":"Full-Stack Developer"}, 
-	{"user_name":"Hendry","password":"admin","nama_lengkap":"","bio":""}, 
-	{"user_name":"Keyserjaya","password":"87654312","nama_lengkap":"Jaya Temara","bio":"Game Developer"}, 
-	{"user_name":"Krisna","password":"admin","nama_lengkap":"","bio":""}, 
-	{"user_name":"Udin","password":"admin","nama_lengkap":"","bio":""}
+  {
+    "NIS": "3",
+    "nama": "Lesi",
+    "id_jurusan": "3",
+    "jk": "P",
+    "alamat": "Jl. Tukad"
+  },
+  {
+    "NIS": "4",
+    "nama": "Dwiki",
+    "id_jurusan": "4",
+    "jk": "L",
+    "alamat": "Jl. Tukad Citarum"
+  },
+  {
+    "NIS": "1234",
+    "nama": "Sukijan",
+    "id_jurusan": "1",
+    "jk": "L",
+    "alamat": "Bandung"
+  },
+  {
+    "NIS": "2445",
+    "nama": "Bagus Krisna",
+    "id_jurusan": "1",
+    "jk": "L",
+    "alamat": "Denpasar"
+  },
+  {
+    "NIS": "2446",
+    "nama": "Bagus Mantonafi",
+    "id_jurusan": "1",
+    "jk": "L",
+    "alamat": "Denpasar"
+  },
+  {
+    "NIS": "2453",
+    "nama": "Hendry Roganda",
+    "id_jurusan": "1",
+    "jk": "L",
+    "alamat": "Denpasar"
+  }
+],
+
+[
+  {
+    "user_name": "Adit",
+    "password": "admin",
+    "nama_lengkap": "",
+    "bio": ""
+  },
+  {
+    "user_name": "admin",
+    "password": "admin",
+    "nama_lengkap": "",
+    "bio": ""
+  },
+  {
+    "user_name": "Gusman",
+    "password": "admin",
+    "nama_lengkap": "Bagus Mantonafi",
+    "bio": "Full-Stack Developer"
+  },
+  {
+    "user_name": "Hendry",
+    "password": "admin",
+    "nama_lengkap": "",
+    "bio": ""
+  },
+  {
+    "user_name": "Keyserjaya",
+    "password": "87654312",
+    "nama_lengkap": "Jaya Temara",
+    "bio": "Game Developer"
+  },
+  {
+    "user_name": "Krisna",
+    "password": "admin",
+    "nama_lengkap": "",
+    "bio": ""
+  },
+  {
+    "user_name": "Udin",
+    "password": "admin",
+    "nama_lengkap": "",
+    "bio": ""
+  }
+]
+}
 ]

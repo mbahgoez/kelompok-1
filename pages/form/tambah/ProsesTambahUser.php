@@ -7,6 +7,7 @@
  */
 
 include "../../../partials/koneksi.php";
+include "../../../partials/functions.php";
 
 
 $username = $_POST["user_name"];
@@ -17,17 +18,17 @@ $bio = $_POST["bio"];
 
 
 if($password !== $repassword){
-    header("Location:http://localhost/design-adm/pages/form/tambah/TambahUser.php?status=wrongpassword");
+    directMsg("Password tak sesuai", "pages/form/tambah/TambahUser.php?status=wrongpassword");
 }
 else {
-   $query = mysql_query("INSERT INTO user VALUES('$username', '$password','$nama_lengkap','$bio')");
+   $query = mysql_query("INSERT INTO user VALUES('$username', '$password','$nama_lengkap','$bio')") or die(mysql_error());
+
     if($query){
          ?>
         <script>
             alert("Penambahan user \"<?php echo $username; ?>\" atas nama \"<?php echo $nama_lengkap ?>\" Berhasil");
-            location.href="http://localhost/design-adm/index.php#dashboard";
+            location.href="<?php siteUrl('#dashboard'); ?>";
         </script>
         <?php
-
     }
 }

@@ -1,20 +1,11 @@
 <?php
 
 include "../../../partials/koneksi.php";
+include "../../../partials/functions.php";
 
 $id = $_POST["id_jurusan"];
 $jurusan = $_POST["nama_jurusan"];
 
 $query = mysql_query("INSERT INTO jurusan VALUES('$id','$jurusan')");
 
-if($query){
-    header("Location:http://localhost/design-adm/index.php#jurusan");
-}
-else {
-    ?>
-    <script>
-        alert("Gagal Menambahkan Jurusan");
-        location.href="http://localhost/design-adm/index.php#jurusan";
-    </script>
-    <?php
-}
+cekQuery($query, "Data Jurusan Berhasil Ditambah!", "Data Jurusan Gagal Ditambah!", "#jurusan");

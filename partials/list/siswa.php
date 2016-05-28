@@ -23,34 +23,63 @@
 							</tr>
 						</thead>
 						<tbody>
-                        <?php
+
+						<?php 
 							$urut = 1;
 							$tampilkan = mysql_query("select * from siswa");
-							while ($hasil = mysql_fetch_array($tampilkan)){
-								echo' 
+							while($hasil = mysql_fetch_array($tampilkan)){
+								?>
 								<tr>
-								<td>'.$urut.'</td>
-								<td>'.$hasil[0].'</td>
-								<td>'.$hasil[1].'</td>
-								<td>'.$hasil[2].'</td>
-								<td>'.$hasil[3].'</td>
-								<td>'.$hasil[4].'</td>
-								<td>
-									<a href="http://localhost/design-adm/pages/form/Hapus/ProsesHapusSiswa.php?nis='.$hasil[0].'" class="hapus">
-										HAPUS
-									<i class="icon ion-ios-trash-outline"></i>
-									</a>
-								</td>
+									<td><?php echo $urut++; ?></td>
+									<td><?php echo $hasil['0']; ?></td>
+									<td><?php echo $hasil['1']; ?></td>
+									<td><?php echo $hasil['2']; ?></td>
+									<td><?php echo $hasil['3']; ?></td>
+									<td><?php echo $hasil['4']; ?></td>
+									<td>
+										<a href="pages/form/hapus/ProsesHapusSiswa.php?nis=<?php echo $hasil['0']; ?>" class="hapus">HAPUS 
+										<i class="icon ion-ios-trash-outline"></i>
+										</a>
+									</td>
+									<td>
+										<a href="pages/form/update/UpdateSiswa.php?nis=<?php echo $hasil['0']; ?>" class="edit">
+											EDIT
+											<i class="icon ion-edit"></i>
+										</a>
+									</td>
+								</tr>
+								<?php
+							} 
+						?>
 
-								<td>
-									<a href="http://localhost/design-adm/pages/form/update/UpdateSiswa.php?nis='.$hasil[0].'" class="edit">
-										EDIT
-									<i class="icon ion-edit"></i>
-									</a>
-								</td>
-							</tr>';
-							$urut++;
-							}
+                        <?php
+							// $urut = 1;
+							// $tampilkan = mysql_query("select * from siswa");
+							// while ($hasil = mysql_fetch_array($tampilkan)){
+							// 	echo' 
+							// 	<tr>
+							// 	<td>'.$urut.'</td>
+							// 	<td>'.$hasil[0].'</td>
+							// 	<td>'.$hasil[1].'</td>
+							// 	<td>'.$hasil[2].'</td>
+							// 	<td>'.$hasil[3].'</td>
+							// 	<td>'.$hasil[4].'</td>
+							// 	<td>
+							// 		<a href="http://localhost/design-adm/pages/form/Hapus/ProsesHapusSiswa.php?nis='.$hasil[0].'" class="hapus">
+							// 			HAPUS
+							// 		<i class="icon ion-ios-trash-outline"></i>
+							// 		</a>
+							// 	</td>
+
+							// 	<td>
+							// 		<a href="siteUrl('pages/form/update/UpdateSiswa.php?nis='.$hasil[0]')" class="edit">
+							// 			EDIT
+							// 		<i class="icon ion-edit"></i>
+							// 		</a>
+							// 	</td>
+							// </tr>'";
+							// $urut++;
+							// }
 							?>
 						</tbody>
 					</table>

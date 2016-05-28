@@ -12,6 +12,4 @@ $user = $_GET["user"];
 
 $query = mysql_query("DELETE FROM user WHERE user_name='$user'");
 
-if($query){
-  	directMsg("Data Pengguna Berhasil Dihapus!", "#user-team");
-}
+cekQuery($query, "Data Pengguna Berhasil Dihapus!", "Data Pengguna Gagal Dihapus!", "#user-team");

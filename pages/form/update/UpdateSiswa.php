@@ -24,7 +24,7 @@ include "../../../partials/functions.php";
 		$hasil = mysql_fetch_array($tampilkan);
 	?>
 		<div id="content">
-			<form action="http://localhost/design-adm/pages/form/Update/ProsesUpdateSiswa.php?nisSebelum=<?php echo $nis; ?>" method="post">
+			<form action="ProsesUpdateSiswa.php?nisSebelum=<?php echo $nis; ?>" method="post">
 				<div id="form-tambah">
 					<div class="row">
 						<div class="col-33">
@@ -33,14 +33,14 @@ include "../../../partials/functions.php";
 						</div>
 					
 						<div class="col-66">
-							<label>Fullname</label>
+							<label>Nama Lengkap</label>
 							<input type="text" name="nama_lengkap" value="<?php echo $hasil[1]; ?>" required>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-100">
 							<label>ID Jurusan</label>
-							<input type="text" name="id_juru" value="<?php echo $hasil[2]; ?>" required>
+							<input type="text" placeholder="RPL/MM/TKJ/AN/DKV" name="id_juru" value="<?php echo $hasil[2]; ?>" required>
 						</div>
 					</div>
 					<div class="row">

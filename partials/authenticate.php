@@ -15,10 +15,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 			$_SESSION["nama"] = $user["nama_lengkap"];
 			$_SESSION["bio"] = $user["bio"];
 
-			header(directToIndex());
+			directMsg("Selamat anda berhasil masuk!", directToIndex());
 		}
 		else {
-			header(directToLogin());
+			directMsg("Gagal Masuk", directToLogin());
 		}
 	}
 }
