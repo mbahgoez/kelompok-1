@@ -5,23 +5,23 @@ T.H 2015/2016
 
 ## Developer, tugas dan Password admin untuk login ke system
 1. Bagus Mantonafi (Fullstack Developer & Web Designer)
-	user : bagus
-	pass : 1234
+	user : Gusman
+	pass : admin
 2. Bagus Krisna (Back-End/CRUD)
-	user : xxxx
-	pass : xxxx
+	user : bagus
+	pass : admin
 3. Hendry Roganda (Back-End/CRUD)
-	user : xxxx
-	pass : xxxx
+	user : hendryy
+	pass : admin
 4. Sholahudin (Back-End/CRUD)
-	user : xxxx
-	pass : xxxx
+	user : din
+	pass : admin
 5. Jaya Temara (Back-End/CRUD & Database)
-	user : xxxx
-	pass : xxxx
+	user : keyserjaya
+	pass : 87654312
 6. Aditya Putra (Back-End/CRUD)
-	user : xxxx
-	pass : xxxx
+	user : ditya12
+	pass : admin
 
 
 
