@@ -1,4 +1,4 @@
-<header>
+<header id="dash">
 	<div id="title-page">
 		<a href="<?php siteUrl("index.php");  ?>">
 			<i class="icon ion-android-refresh"></i>

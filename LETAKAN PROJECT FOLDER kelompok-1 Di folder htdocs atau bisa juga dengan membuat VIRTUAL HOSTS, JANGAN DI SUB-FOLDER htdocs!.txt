@@ -1,1 +1,0 @@
-Alternative lain dengan membuat "virtual host" di xampp/apache/nginx/iis atau dengan mengubah fungsi "siteUrl(), directToLogin(), directToIndex()" yang terdapat pada file "functions.php" didalam folder "partials"

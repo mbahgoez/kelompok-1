@@ -15,7 +15,7 @@
 		0%{top:0px;}
 		100%{top:20px;}
 	}
-	@-moz-keyframes arrowdown {
+	@-webkit-keyframes arrowdown {
 		0%{top:0px;}
 		100%{top:20px;}
 	}
@@ -24,21 +24,17 @@
 		100%{top:20px;}
 	}
 	@-webkit-keyframes shake {
-		0%{transform:rotate(40deg);}
-		100%{transform:rotate(-40deg);}
-	}
-	@-moz-keyframes shake {
-		0%{transform:rotate(40deg);}
-		100%{transform:rotate(-40deg);}
+		0%{-webkit-transform:rotate(40deg);transform:rotate(40deg);}
+		100%{-webkit-transform:rotate(-40deg);transform:rotate(-40deg);}
 	}
 	@keyframes shake {
-		0%{transform:rotate(40deg);}
-		100%{transform:rotate(-40deg);}
+		0%{-webkit-transform:rotate(40deg);transform:rotate(40deg);}
+		100%{-webkit-transform:rotate(-40deg);transform:rotate(-40deg);}
 	}
 	body {
 		background:#60C0E1;
 		color:#fff;
-		font-family:'raleway';
+		font-family:'raleway', 'segoe ui', sans-serif;
 		text-align:center;
 	}
 	* {
@@ -52,7 +48,8 @@
 	div.row i.animate {
 		font-size:50px;
 		position:relative;
-		animation:arrowdown .3s alternate infinite;
+		-webkit-animation:arrowdown .3s alternate infinite;
+		        animation:arrowdown .3s alternate infinite;
 		/* top:0; */
 	}
 	div.row i:hover {
@@ -120,7 +117,8 @@
 	div.ill .icon-left {
 		font-size:100px;
 		display:inline-block;
-		animation:shake 1s alternate infinite;
+		-webkit-animation:shake 1s alternate infinite;
+		        animation:shake 1s alternate infinite;
 	}
 	div.ill .icon-center {
 		font-size:200px;
@@ -140,7 +138,7 @@
 		border:3px solid #93D8EF;
 		margin:5px 0;
 		border-radius:3px;
-		font-family:'raleway';
+		font-family:'raleway', 'segoe ui', sans-serif;
 		color:#60C0E1;
 	}
 	div.form p {
@@ -154,14 +152,14 @@
 	}
 	div.form input::-webkit-input-placeholder {
 		color:#999;
-		font-family:'raleway';
+		font-family:'raleway', 'segoe ui', sans-serif;
 	}
 	div.form button {
 		float:right;
 		border:3px solid #93D8EF;
 		background:transparent;
 		padding:15px 30px;
-		font-family:'raleway';
+		font-family:'raleway', 'segoe ui', sans-serif;
 		font-weight:600;
 		font-size:18px;
 		color:#fff;

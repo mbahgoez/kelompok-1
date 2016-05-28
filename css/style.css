@@ -1,6 +1,47 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: 'segoe ui', sans-serif; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/Raleway-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/Raleway-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/Raleway-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/Raleway-Heavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/Raleway-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/Raleway-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/Raleway-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/Raleway-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype"); }
 
 hr.clearfix {
   visibility: hidden;
@@ -8,7 +49,7 @@ hr.clearfix {
   display: block; }
 
 body {
-  font-family: 'raleway',sans-serif;
+  font-family: 'raleway', 'segoe ui',sans-serif;
   background: #F6F6F6; }
 
 div, nav, header, footer, input, section, table, textarea {
@@ -26,7 +67,8 @@ div, nav, header, footer, input, section, table, textarea {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   opacity: 0;
-  transform: rotate(180deg); }
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 .card {
   background: #fff;
@@ -82,7 +124,7 @@ nav {
         font-weight: 700;
         color: #fff;
         font-size: 14px;
-        font-family: 'montserrat',sans-serif; }
+        font-family: 'montserrat', 'segoe ui', sans-serif; }
   nav div#menu {
     background: transparent; }
     nav div#menu ul {
@@ -121,7 +163,7 @@ nav {
           color: #ccc;
           font-weight: 100;
           text-decoration: none;
-          font-family: 'montserrat',sans-serif;
+          font-family: 'montserrat', 'segoe ui', sans-serif;
           font-size: 14px;
           padding-left: 30px;
           transition: all .1s ease; }
@@ -156,10 +198,12 @@ section#main {
       display: inline-block;
       padding: 25px 25px;
       margin-left: 50px;
-      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
       transition: all 1s ease; }
       section#main header div#title-page a:hover {
-        transform: rotate(1100deg); }
+        -webkit-transform: rotate(1100deg);
+                transform: rotate(1100deg); }
         section#main header div#title-page a:hover i {
           color: #00C9D6; }
       section#main header div#title-page a i {
@@ -168,7 +212,7 @@ section#main {
     section#main header div#title-page h2 {
       padding-left: 20px;
       font-weight: 500;
-      font-family: 'montserrat',sans-serif;
+      font-family: 'montserrat', 'segoe ui', sans-serif;
       color: #555;
       position: relative;
       top: -10px;
@@ -185,7 +229,7 @@ section#main {
       text-decoration: none;
       color: #fff;
       border-radius: 5px;
-      font-family: 'montserrat',sans-serif; }
+      font-family: 'montserrat', 'segoe ui', sans-serif; }
       section#main header a#keluar i {
         padding-right: 15px;
         font-size: 20px;
@@ -283,13 +327,24 @@ section#main {
           display: block;
           font-size: 100px;
           color: #777;
-          animation: colormix 1s alternate infinite; }
+          -webkit-animation: colormix 1s alternate infinite;
+                  animation: colormix 1s alternate infinite; }
+
+@-webkit-keyframes colormix {
+  0% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
 
 @keyframes colormix {
   0% {
-    transform: rotate(-10deg); }
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg); }
   100% {
-    transform: rotate(0deg); } }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
     section#main div#content div.list-table {
       width: 100%;
       padding: 30px 20px;
@@ -304,7 +359,7 @@ section#main {
           background: #55AF7A;
           text-decoration: none;
           color: #fff;
-          font-family: 'montserrat',sans-serif;
+          font-family: 'montserrat', 'segoe ui', sans-serif;
           padding: 10px;
           display: inline-block;
           border-radius: 5px;
@@ -329,7 +384,7 @@ section#main {
             padding: 8px;
             text-decoration: none;
             color: #fff;
-            font-family: 'montserrat',sans-serif;
+            font-family: 'montserrat', 'segoe ui', sans-serif;
             border-radius: 3px; }
           section#main div#content div.list-table div.list table .hapus {
             background: #F3565D; }
@@ -353,7 +408,7 @@ section#main {
               font-weight: 200;
               color: #555;
               text-align: left;
-              font-family: 'montserrat',sans-serif; }
+              font-family: 'montserrat', 'segoe ui', sans-serif; }
 
 #dahsboard, #siswa {
   width: 100%;
@@ -371,7 +426,7 @@ div#form-tambah {
   box-shadow: 0 1px 2px 0 #ccc;
   margin: 20px 20px; }
   div#form-tambah label {
-    font-family: 'montserrat',sans-serif;
+    font-family: 'montserrat', 'segoe ui', sans-serif;
     margin-bottom: 10px;
     display: block;
     color: #444; }
@@ -381,7 +436,7 @@ div#form-tambah {
       margin-bottom: 0;
       display: inline-block;
       font-weight: 300;
-      font-family: 'raleway',sans-serif; }
+      font-family: 'raleway', 'segoe ui',sans-serif; }
       div#form-tambah label.radio input {
         margin-right: 10px; }
   div#form-tambah div.row {
@@ -394,7 +449,7 @@ div#form-tambah {
       background: #55AF7A;
       color: #fff;
       padding: 10px 20px;
-      font-family: 'montserrat',sans-serif;
+      font-family: 'montserrat', 'segoe ui', sans-serif;
       border: none;
       box-shadow: 0 1px 1px 0 #ccc;
       border-radius: 3px;
@@ -416,14 +471,14 @@ div#form-tambah {
       font-weight: 400;
       border-radius: 3px;
       width: 100%;
-      font-family: 'montserrat',sans-serif; }
+      font-family: 'montserrat', 'segoe ui', sans-serif; }
       div#form-tambah div.row input[type="text"]:focus, div#form-tambah div.row input[type="number"]:focus, div#form-tambah div.row input[type="password"]:focus, div#form-tambah div.row input[type="email"]:focus, div#form-tambah div.row textarea:focus {
         border: 1px solid #365DCF;
         outline: none;
         color: #365dcf; }
       div#form-tambah div.row input[type="text"]::-webkit-input-placeholder, div#form-tambah div.row input[type="number"]::-webkit-input-placeholder, div#form-tambah div.row input[type="password"]::-webkit-input-placeholder, div#form-tambah div.row input[type="email"]::-webkit-input-placeholder, div#form-tambah div.row textarea::-webkit-input-placeholder {
         color: #aaa;
-        font-family: 'raleway',sans-serif; }
+        font-family: 'raleway', 'segoe ui',sans-serif; }
     div#form-tambah div.row div.col-100 {
       width: 100%;
       padding: 0 10px; }
@@ -448,7 +503,7 @@ div#form-tambah {
   background: #55AF7A;
   color: #fff;
   padding: 10px 20px;
-  font-family: 'montserrat',sans-serif;
+  font-family: 'montserrat', 'segoe ui', sans-serif;
   border: none;
   box-shadow: 0 1px 1px 0 #ccc;
   border-radius: 3px;

@@ -10,13 +10,13 @@
 <div id="menu">
 	<ul>
 		<li class="active">
-			<a href="<?php siteUrl("#dashboard"); ?>">
+			<a href="<?php siteUrl("#dash"); ?>">
 				<i class="icon ion-ios-analytics-outline"></i>
 				DASHBOARD
 			</a>
 		</li>
 		<li>
-			<a href="<?php siteUrl("#dashboard"); ?>">
+			<a href="<?php siteUrl("#user-team"); ?>">
 				<i class="icon ion-ios-people"></i>
 				USER ADMIN
 			</a>

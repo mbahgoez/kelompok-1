@@ -1,18 +1,62 @@
 * {
 	padding:0;
 	margin:0;
+	font-family:'segoe ui', sans-serif;
 }
 
 $redis:#EE2751;
 
+@font-face {
+	font-family: 'raleway';
+	src: url('../fonts/raleway/Raleway-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'raleway';
+	src:url('../fonts/raleway/Raleway-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'raleway';
+	src:url('../fonts/raleway/Raleway-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'raleway';
+	src:url('../fonts/raleway/Raleway-Heavy.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'raleway';
+	src:url('../fonts/raleway/Raleway-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'raleway';
+	src:url('../fonts/raleway/Raleway-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'raleway';
+	src:url('../fonts/raleway/Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'raleway';
+	src:url('../fonts/raleway/Raleway-SemiBold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'raleway';
+	src:url('../fonts/raleway/Raleway-Thin.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: 'montserrat';
+	src:url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
 @mixin raleway(){
-	font-family: 'raleway',sans-serif;
+	font-family: 'raleway', 'segoe ui',sans-serif;
 }
 @mixin montserrat(){
-	font-family: 'montserrat',sans-serif;
+	font-family: 'montserrat', 'segoe ui', sans-serif;
 }
 @mixin lato(){
-	font-family: 'lato',sans-serif;
+	font-family: 'lato', 'segoe ui', sans-serif;
 }
 hr.clearfix {
 	visibility: hidden;
